@@ -7,7 +7,7 @@ ENV FLASK_APP="app.py"
 # Install Base Package
 RUN apt-get update && apt-get install -y apt-utils python-pip git
 
-#@ Install flask
+# Install flask
 RUN pip install flask pyyaml
 COPY ./source ${HOME_DIR}
 
